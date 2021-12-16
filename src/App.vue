@@ -1,25 +1,27 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
+import { useI18n } from 'vue-i18n'
 
 import FjAside from './components/FjAside/FjAside.vue';
-import FjProfileCard from './components/FjProfileCard/FjProfileCard.vue';
+import FjAsideAnchors from './components/FjAsideAnchors/FjAsideAnchors.vue';
 
 export default defineComponent({
-  components: {     
+  components: {
     FjAside,
-    FjProfileCard,
-  },
+    FjAsideAnchors,
+},
     setup() {
+        const { t } = useI18n();
         return {
+          t,
         };
     },
 })
 </script>
 
 <template>
-  <FjAside>
-    <FjProfileCard/>
-  </FjAside>
+  <FjAside/>
+  <FjAsideAnchors/>
 </template>
 
 <style>
