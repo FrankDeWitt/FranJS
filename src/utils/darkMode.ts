@@ -4,4 +4,9 @@ export function darkMode() {
   } else {
     document.documentElement.classList.remove('dark')
   }
+  
+  localStorage.theme = 'light'
+  localStorage.theme = 'dark'
+  
+  localStorage.removeItem('theme')
 }
