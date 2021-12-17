@@ -158,7 +158,7 @@ export default defineComponent({
     >
     <div class="flex justify-evenly">
       {{ t('Download CV')}}
-      <FjIconBase width="18" height="18" icon-name="dice">
+      <FjIconBase width="18" height="18" icon-name="download">
         <IconDownload/>
       </FjIconBase>
     </div>

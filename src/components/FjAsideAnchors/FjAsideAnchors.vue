@@ -2,10 +2,13 @@
 import { defineComponent } from 'vue'
 import { useI18n } from 'vue-i18n'
 
+import FjSwitchMode from '@/components/FjSwitchMode/FjSwitchMode.vue';
+
 
 export default defineComponent({
   name: 'FjAsideAnchors',
   components: {
+    FjSwitchMode
   },
   setup() {
     const { t } = useI18n();
@@ -17,8 +20,8 @@ export default defineComponent({
 </script>
 
 <template>
-  <div class="fixed top-0 right-0 flex flex-col justify-start h-screen p-2 shadow bg-primary aside-anchors">
-
+  <div class="fixed top-0 right-0 flex flex-col justify-start h-screen p-2 bg-white shadow aside-anchors">
+    <FjSwitchMode/>
   </div>
 </template>
 

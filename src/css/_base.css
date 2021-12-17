@@ -1,0 +1,4 @@
+.primary-em em {
+  @apply text-primary;
+  font-style: normal;
+}
