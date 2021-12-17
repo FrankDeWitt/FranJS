@@ -1,4 +1,4 @@
 .primary-em em {
-  @apply text-primary;
+  @apply text-primary dark:text-complementary;
   font-style: normal;
 }

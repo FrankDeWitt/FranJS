@@ -4,10 +4,8 @@ import { createI18n } from 'vue-i18n'
 import App from './App.vue'
 import './index.css'
 import projectLocales from './locales';
-import { darkMode } from '@/utils';
 
-localStorage.theme = 'light'
-darkMode();
+localStorage.setItem('color-theme', 'light');
 
 const i18n = createI18n({
   legacy: false,

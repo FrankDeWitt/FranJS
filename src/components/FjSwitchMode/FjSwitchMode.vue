@@ -1,6 +1,5 @@
 <script lang="ts">
-import { reactive, defineComponent } from 'vue'
-import { useI18n } from 'vue-i18n'
+import { ref, defineComponent } from 'vue'
 
 import FjIconBase from '@/components/FjIconBase/FjIconBase.vue'
 import IconSun from '@/components/Icons/IconSun.vue'
@@ -14,16 +13,24 @@ export default defineComponent({
     IconMoon,
   },  
   setup () {
-    const { t } = useI18n();
+    const theme = ref(true);
 
-    function switchMode() {
-      console.log(localStorage.theme);
-      localStorage.theme = localStorage.theme === 'light' ? 'dark' : 'light';
-      console.log(localStorage.theme);
-    }
+    function themeToggleBtn() {
+      theme.value = !theme.value;
+      if (localStorage.getItem('color-theme')) {
+        if (localStorage.getItem('color-theme') === 'light') {
+          document.documentElement.classList.add('dark');
+          localStorage.setItem('color-theme', 'dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+          localStorage.setItem('color-theme', 'light');
+        }
+      }
+    };
+    
     return {
-      t,
-      switchMode
+      theme,
+      themeToggleBtn
     }
   }
 })
@@ -31,11 +38,16 @@ export default defineComponent({
 
 <template>
   <span 
-    class="flex items-center content-center self-center justify-center rounded-full cursor-pointer w-7 h-7 bg-primary"
-    @click="switchMode"
+    :class="[
+      'flex items-center content-center self-center justify-center rounded-full cursor-pointer w-7 h-7 border border-gray-500',
+      theme ? 'bg-gray-500 text-white' : 'bg-white text-gray-500'
+    ]"
+    class=""
+    @click="themeToggleBtn"
   >
     <FjIconBase width="18" height="18" icon-name="github">
-      <IconSun/>
+      <IconSun v-if="!theme"/>
+      <IconMoon v-if="theme"/>
     </FjIconBase>
   </span>
 </template>

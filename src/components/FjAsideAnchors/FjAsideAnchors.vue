@@ -20,7 +20,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <div class="fixed top-0 right-0 flex flex-col justify-start h-screen p-2 bg-white shadow aside-anchors">
+  <div class="fixed top-0 right-0 flex flex-col justify-start h-screen p-2 bg-white shadow dark:bg-gray-600 aside-anchors">
     <FjSwitchMode/>
   </div>
 </template>

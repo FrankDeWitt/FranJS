@@ -31,9 +31,9 @@ export default defineComponent({
       <p>{{ progressValue }}%</p>
     </div>
     <div class="relative h-2 mt-2">
-      <div class="absolute w-full h-full border rounded-full border-primary"></div>
+      <div class="absolute w-full h-full border rounded-full border-primary dark:border-complementary"></div>
       <div 
-        class="absolute h-full rounded-full bg-primary" 
+        class="absolute h-full rounded-full bg-primary dark:bg-complementary" 
         :style="{ width: progressValue + '%' }"
       ></div>
     </div>

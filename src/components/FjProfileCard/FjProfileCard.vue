@@ -27,25 +27,25 @@ export default defineComponent({
 <template>
   <div class="flex flex-col items-center">
     <div class="relative mb-6 w-36 h-36">
-      <img class="inline object-cover rounded-full bg-primary" src="@/assets/logo.png" alt="Profile image"/>
+      <img class="inline object-cover rounded-full bg-primary dark:bg-complementary" src="@/assets/logo.png" alt="Profile image"/>
       <span class="absolute w-4 h-4 border-white rounded-full bottom-1 bg-success right-6"></span>
     </div>
     <h4 class="mb-2 text-lg font-medium">Fran J Salvador</h4>
-    <p class="mb-3 text-sm font-normal text-base-500">
+    <p class="mb-3 text-sm font-normal text-gray-400">
       {{ t('Font-End Developer') }}
     </p>
     <div class="flex justify-around space-x-4">
-      <span class="flex items-center content-center self-center justify-center rounded-full cursor-pointer w-7 h-7 bg-primary">
+      <span class="flex items-center content-center self-center justify-center rounded-full cursor-pointer w-7 h-7 bg-primary dark:bg-complementary">
         <FjIconBase width="18" height="18" icon-name="github">
           <IconGit/>
         </FjIconBase>
       </span>
-      <span class="flex items-center content-center self-center justify-center rounded-full cursor-pointer w-7 h-7 bg-primary">
+      <span class="flex items-center content-center self-center justify-center rounded-full cursor-pointer w-7 h-7 bg-primary dark:bg-complementary">
         <FjIconBase width="18" height="18" icon-name="write">
           <IconTwitter/>
         </FjIconBase>
       </span>
-      <span class="flex items-center content-center self-center justify-center rounded-full cursor-pointer w-7 h-7 bg-primary">
+      <span class="flex items-center content-center self-center justify-center rounded-full cursor-pointer w-7 h-7 bg-primary dark:bg-complementary">
         <FjIconBase width="18" height="18" icon-name="write">
           <IconInstagram/>
         </FjIconBase>
