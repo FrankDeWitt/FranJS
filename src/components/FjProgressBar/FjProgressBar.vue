@@ -1,45 +1,45 @@
 <script lang="ts">
-import { defineComponent } from 'vue';
-import { useI18n } from 'vue-i18n';
+import { defineComponent } from 'vue'
+import { useI18n } from 'vue-i18n'
 
 export default defineComponent({
   name: 'FjProgressBar',
   props: {
     label: {
       type: String,
-      default: ''
+      default: '',
     },
     progressValue: {
       type: Number,
-      default: 0
+      default: 0,
     },
   },
-  setup () {
-    const { t } = useI18n();
+  setup() {
+    const { t } = useI18n()
 
     return {
-      t
+      t,
     }
-  }
+  },
 })
 </script>
 
 <template>
   <div>
     <div class="flex justify-between">
-      <p>{{ t(label)}}</p>
+      <p>{{ t(label) }}</p>
       <p>{{ progressValue }}%</p>
     </div>
     <div class="relative h-2 mt-2">
-      <div class="absolute w-full h-full border rounded-full border-primary dark:border-complementary"></div>
-      <div 
-        class="absolute h-full rounded-full bg-primary dark:bg-complementary" 
+      <div
+        class="absolute w-full h-full border rounded-full border-primary dark:border-complementary"
+      />
+      <div
+        class="absolute h-full rounded-full bg-primary dark:bg-complementary"
         :style="{ width: progressValue + '%' }"
-      ></div>
+      />
     </div>
   </div>
 </template>
 
-<style scoped>
-
-</style>
+<style lang="postcss" scoped></style>

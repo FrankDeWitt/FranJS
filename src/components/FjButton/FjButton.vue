@@ -1,5 +1,5 @@
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent } from 'vue'
 
 export default defineComponent({
   name: 'FjButton',
@@ -7,17 +7,19 @@ export default defineComponent({
     mode: {
       type: String,
       default: 'filled',
-      validator: (val: string) => ['filled', 'outlined', 'transparent'].includes(val),
+      validator: (val: string) =>
+        ['filled', 'outlined', 'transparent'].includes(val),
     },
     size: {
       type: String,
       default: 'medium',
-      validator: (val: string) => ['big', 'medium', 'small'].includes(val), 
+      validator: (val: string) => ['big', 'medium', 'small'].includes(val),
     },
     color: {
       type: String,
       default: 'primary',
-      validator: (val: string) => ['primary', 'secondary', 'complementary', 'highlight'].includes(val),
+      validator: (val: string) =>
+        ['primary', 'secondary', 'complementary', 'highlight'].includes(val),
     },
     disabled: {
       type: Boolean,
@@ -29,32 +31,32 @@ export default defineComponent({
     },
   },
   emits: ['click'],
-  setup (props, { emit }) {
+  setup(props, { emit }) {
     const handleClick = (event: Event) => {
-      emit('click', event, props.value);
-    };
+      emit('click', event, props.value)
+    }
 
     return {
       handleClick,
     }
-  }
+  },
 })
 </script>
 
 <template>
   <div
     type="button"
-    :class="['fj-button relative',mode, size, color]"
+    :class="['fj-button relative', mode, size, color]"
     :disabled="disabled"
     @click="handleClick"
   >
     <span>
-      <slot/>
+      <slot />
     </span>
   </div>
 </template>
 
-<style scoped>
+<style lang="postcss" scoped>
 .fj-button {
   @apply border border-solid bg-transparent inline-block rounded-lg transition-all duration-200 font-medium cursor-pointer;
   &.filled {
@@ -68,9 +70,9 @@ export default defineComponent({
     }
     &.primary,
     &.secondary {
-      @apply bg-primary border-primary;
+      @apply bg-primary border-primary dark:bg-complementary dark:border-complementary;
       &:hover {
-        @apply bg-secondary-300 border-secondary-300;
+        @apply bg-secondary-300 border-secondary-300 dark:bg-complementary dark:border-complementary;
       }
       &:disabled {
         @apply bg-primary-300 border-primary-300;
@@ -200,6 +202,5 @@ export default defineComponent({
   &:disabled {
     cursor: not-allowed;
   }
-
 }
 </style>

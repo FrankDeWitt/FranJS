@@ -22,9 +22,9 @@ export default defineComponent({
 </script>
 
 <template>
-  <FjWrapper/>
-  <FjAside/>
-  <FjAsideAnchors/>
+  <FjWrapper />
+  <FjAside />
+  <FjAsideAnchors />
 </template>
 
 <style>

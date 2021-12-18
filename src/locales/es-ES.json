@@ -8,9 +8,15 @@
   "Address": "Dirección",
   "Barcelona": "Barcelona",
   "Languages": "Idiomas",
+  "es": "Esp",
+  "en": "Ing",
   "Spanish": "Español",
   "English": "Ingles",
   "Skills": "Skills",
+  "Extra Skills": "Skills Extras",
+  "Download CV": "Descargar CV",
   "I’m Fran J Salvador <em>Front-end</em> Developer": "Soy Fran J Salvador</br>desarrollador <em>Front-end</em>",
-  "Hire Me": "Contrátame"
+  "Hire Me": "Contrátame",
+  "Education": "Estudios",
+  "Work History": "Carrera laboral"
 }

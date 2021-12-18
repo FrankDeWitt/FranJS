@@ -6,22 +6,22 @@ export default defineComponent({
   props: {
     iconName: {
       type: String,
-      default: 'box'
+      default: 'box',
     },
     width: {
       type: [Number, String],
-      default: 18
+      default: 18,
     },
     height: {
       type: [Number, String],
-      default: 18
+      default: 18,
     },
     iconColor: {
       type: String,
-      default: 'currentColor'
-    }
-  }
-});
+      default: 'currentColor',
+    },
+  },
+})
 </script>
 
 <template>
@@ -40,7 +40,7 @@ export default defineComponent({
   </svg>
 </template>
 
-<style scoped>
+<style lang="postcss" scoped>
 svg {
   display: inline-block;
   vertical-align: baseline;

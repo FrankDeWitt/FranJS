@@ -1,13 +1,11 @@
 <script lang="ts">
-import { ref, defineComponent } from 'vue'
+import { defineComponent } from 'vue'
 import { useI18n } from 'vue-i18n'
 
-import LocalChanger from '@/components/LocalChanger.vue';
-
-import FjButton from '@/components/FjButton/FjButton.vue';
-import FjProfileCard from '@/components/FjProfileCard/FjProfileCard.vue';
-import FjProfileData from '@/components/FjProfileData/FjProfileData.vue';
-import FjProgressBar from '@/components/FjProgressBar/FjProgressBar.vue';
+import FjButton from '@/components/FjButton/FjButton.vue'
+import FjProfileCard from '@/components/FjProfileCard/FjProfileCard.vue'
+import FjProfileData from '@/components/FjProfileData/FjProfileData.vue'
+import FjProgressBar from '@/components/FjProgressBar/FjProgressBar.vue'
 
 import FjIconBase from '@/components/FjIconBase/FjIconBase.vue'
 import IconDice from '@/components/Icons/IconDice.vue'
@@ -16,29 +14,29 @@ import IconDownload from '@/components/Icons/IconDownload.vue'
 export default defineComponent({
   name: 'FjAside',
   components: {
-    LocalChanger,
     FjButton,
     FjIconBase,
     IconDice,
     IconDownload,
     FjProfileCard,
     FjProfileData,
-    FjProgressBar
+    FjProgressBar,
   },
   setup() {
-    const { t } = useI18n();
+    const { t } = useI18n()
     return {
       t,
-    };
+    }
   },
 })
 </script>
 
 <template>
-  <div class="fixed top-0 flex flex-col justify-start h-screen p-10 overflow-y-scroll bg-white shadow dark:bg-gray-600 aside">
-    <LocalChanger/>
-    <FjProfileCard/>
-    <hr class="my-6 border-0 border-t border-base-400">
+  <div
+    class="fixed top-0 flex flex-col justify-start h-screen p-10 overflow-y-scroll bg-white shadow dark:bg-gray-600 aside"
+  >
+    <FjProfileCard />
+    <hr class="my-6 border-0 border-t border-base-400" />
     <div class="space-y-2">
       <FjProfileData>
         <template #title>
@@ -47,9 +45,7 @@ export default defineComponent({
           </div>
         </template>
         <template #content>
-          <div class="dark:text-white">
-            31
-          </div>
+          <div class="dark:text-white">31</div>
         </template>
       </FjProfileData>
       <FjProfileData>
@@ -89,79 +85,69 @@ export default defineComponent({
         </template>
       </FjProfileData>
     </div>
-    <hr class="my-6 border-0 border-t border-base-400 dark:border-white">
+    <hr class="my-6 border-0 border-t border-base-400 dark:border-white" />
     <h4 class="text-base font-medium dark:text-white">
       {{ t('Languages') }}
     </h4>
     <div class="mt-6 space-y-4 text-base-700 dark:text-white">
-      <FjProgressBar
-        label="Spanish"
-        :progressValue="100"
-      />
-      <FjProgressBar
-        label="English"
-        :progressValue="80"
-      />
+      <FjProgressBar label="Spanish" :progress-value="100" />
+      <FjProgressBar label="English" :progress-value="80" />
     </div>
-    <hr class="my-6 border-0 border-t border-base-400 dark:border-white">
+    <hr class="my-6 border-0 border-t border-base-400 dark:border-white" />
     <h4 class="text-base font-medium dark:text-white">
       {{ t('Skills') }}
     </h4>
     <div class="mt-6 space-y-4 text-base-700 dark:text-white">
-      <FjProgressBar
-        label="Vue"
-        :progressValue="80"
-      />
-      <FjProgressBar
-        label="JavaScript"
-        :progressValue="70"
-      />
-      <FjProgressBar
-        label="CSS"
-        :progressValue="90"
-      />
+      <FjProgressBar label="Vue" :progress-value="80" />
+      <FjProgressBar label="JavaScript" :progress-value="70" />
+      <FjProgressBar label="CSS" :progress-value="90" />
     </div>
-    <hr class="my-6 border-0 border-t border-base-400 dark:border-white">
+    <hr class="my-6 border-0 border-t border-base-400 dark:border-white" />
     <h4 class="text-base font-medium dark:text-white">
       {{ t('Extra Skills') }}
     </h4>
     <div class="mt-6 space-y-2">
-      <span class="flex items-center w-full text-primary dark:text-complementary">
+      <span
+        class="flex items-center w-full text-primary dark:text-complementary"
+      >
         <FjIconBase width="18" height="18" icon-name="dice">
-          <IconDice/>
+          <IconDice />
         </FjIconBase>
         <p class="ml-2 text-base-700 dark:text-white">Tailwind, PostCss</p>
       </span>
-      <span class="flex items-center w-full text-primary dark:text-complementary">
+      <span
+        class="flex items-center w-full text-primary dark:text-complementary"
+      >
         <FjIconBase width="18" height="18" icon-name="dice">
-          <IconDice/>
+          <IconDice />
         </FjIconBase>
         <p class="ml-2 text-base-700 dark:text-white">GIT Knowledge</p>
       </span>
-      <span class="flex items-center w-full text-primary dark:text-complementary">
+      <span
+        class="flex items-center w-full text-primary dark:text-complementary"
+      >
         <FjIconBase width="18" height="18" icon-name="dice">
-          <IconDice/>
+          <IconDice />
         </FjIconBase>
         <p class="ml-2 text-base-700 dark:text-white">HTTP & REST</p>
       </span>
-      <span class="flex items-center w-full text-primary dark:text-complementary">
+      <span
+        class="flex items-center w-full text-primary dark:text-complementary"
+      >
         <FjIconBase width="18" height="18" icon-name="dice">
-          <IconDice/>
+          <IconDice />
         </FjIconBase>
         <p class="ml-2 text-base-700 dark:text-white">Unit testing</p>
       </span>
     </div>
-    <hr class="my-6 border-0 border-t border-base-400 dark:border-white">
-    <FjButton 
-      class="text-center"
-      color="secondary"
-    >
-    <div class="flex justify-evenly">
-      {{ t('Download CV')}}
-      <FjIconBase width="18" height="18" icon-name="download">
-        <IconDownload/>
-      </FjIconBase>
-    </div>
+    <hr class="my-6 border-0 border-t border-base-400 dark:border-white" />
+    <FjButton class="text-center" color="secondary">
+      <div class="flex justify-evenly">
+        {{ t('Download CV') }}
+        <FjIconBase width="18" height="18" icon-name="download">
+          <IconDownload />
+        </FjIconBase>
+      </div>
     </FjButton>
   </div>
 </template>

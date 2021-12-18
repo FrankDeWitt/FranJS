@@ -9,8 +9,8 @@ localStorage.setItem('color-theme', 'light');
 
 const i18n = createI18n({
   legacy: false,
-  locale: 'es-ES',
-  fallbackLocale: 'en-US',
+  locale: 'es',
+  fallbackLocale: 'en',
   globalInjection: true,
   messages: projectLocales,
 });
