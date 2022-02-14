@@ -58,7 +58,7 @@ export default defineComponent({
 
 <style lang="postcss" scoped>
 .fj-button {
-  @apply border border-solid bg-transparent inline-block rounded-lg transition-all duration-200 font-medium cursor-pointer;
+  @apply border border-solid inline-block rounded-lg transition-all duration-200 font-medium cursor-pointer;
   &.filled {
     &.primary,
     &.complementary,
@@ -70,13 +70,7 @@ export default defineComponent({
     }
     &.primary,
     &.secondary {
-      @apply bg-primary border-primary dark:bg-complementary dark:border-complementary;
-      &:hover {
-        @apply bg-secondary-300 border-secondary-300 dark:bg-complementary dark:border-complementary;
-      }
-      &:disabled {
-        @apply bg-primary-300 border-primary-300;
-      }
+      @apply bg-primary border-primary hover:bg-secondary-300 hover:border-secondary-300 dark:bg-complementary dark:border-complementary dark:hover:bg-complementary-800 dark:hover:border-complementary-800
     }
     &.complementary {
       @apply bg-complementary border-complementary;

@@ -29,7 +29,7 @@ export default defineComponent({
     <div class="relative mb-6 w-36 h-36">
       <img
         class="inline object-cover rounded-full bg-primary dark:bg-complementary"
-        src="@/assets/logo.png"
+        src="@/assets/avatar.png"
         alt="Profile image"
       />
       <span
@@ -42,21 +42,21 @@ export default defineComponent({
     </p>
     <div class="flex justify-around space-x-4">
       <span
-        class="flex items-center content-center self-center justify-center rounded-full cursor-pointer w-7 h-7 bg-primary dark:bg-complementary"
+        class="flex items-center content-center self-center justify-center rounded-full cursor-pointer w-7 h-7 bg-primary hover:bg-secondary-300 hover:border-secondary-300 dark:bg-complementary dark:border-complementary dark:hover:bg-complementary-800 dark:hover:border-complementary-800"
       >
         <FjIconBase width="18" height="18" icon-name="github">
           <IconGit />
         </FjIconBase>
       </span>
       <span
-        class="flex items-center content-center self-center justify-center rounded-full cursor-pointer w-7 h-7 bg-primary dark:bg-complementary"
+        class="flex items-center content-center self-center justify-center rounded-full cursor-pointer w-7 h-7 bg-primary hover:bg-secondary-300 hover:border-secondary-300 dark:bg-complementary dark:border-complementary dark:hover:bg-complementary-800 dark:hover:border-complementary-800"
       >
         <FjIconBase width="18" height="18" icon-name="write">
           <IconTwitter />
         </FjIconBase>
       </span>
       <span
-        class="flex items-center content-center self-center justify-center rounded-full cursor-pointer w-7 h-7 bg-primary dark:bg-complementary"
+        class="flex items-center content-center self-center justify-center rounded-full cursor-pointer w-7 h-7 bg-primary hover:bg-secondary-300 hover:border-secondary-300 dark:bg-complementary dark:border-complementary dark:hover:bg-complementary-800 dark:hover:border-complementary-800"
       >
         <FjIconBase width="18" height="18" icon-name="write">
           <IconInstagram />
