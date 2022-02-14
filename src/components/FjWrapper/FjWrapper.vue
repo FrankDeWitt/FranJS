@@ -5,8 +5,8 @@ import { useI18n } from 'vue-i18n'
 import FjHero from '@/components/FjHero/FjHero.vue'
 import FjLegend from '@/components/FjLegend/FjLegend.vue'
 
-import careerData from '@/data/career.json'
-import workData from '@/data/work.json'
+import careerData from '../../data/career.json'
+import workData from '../../data/work.json'
 
 export default defineComponent({
   name: 'FjWrapper',
@@ -19,8 +19,8 @@ export default defineComponent({
     return {
       t,
       locale,
-      careerData: careerData,
-      workData: workData,
+      careerData,
+      workData,
     }
   },
 })
@@ -35,7 +35,7 @@ export default defineComponent({
       >
         {{ t('Education') }}
       </h2>
-      <FjLegend :data-elements="careerData[0][locale]" />
+      <FjLegend :data-elements="careerData[locale]" />
     </div>
     <div class="bg-gray-200 wrapper dark:bg-gray-800">
       <h2
@@ -43,7 +43,7 @@ export default defineComponent({
       >
         {{ t('Work History') }}
       </h2>
-      <FjLegend :data-elements="workData[0][locale]" />
+      <FjLegend :data-elements="workData[locale]" />
     </div>
   </div>
 </template>

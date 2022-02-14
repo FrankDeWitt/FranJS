@@ -28,7 +28,7 @@ export default defineComponent({
   <div class="flex flex-col items-center">
     <div class="relative mb-6 w-36 h-36">
       <img
-        class="inline object-cover rounded-full bg-primary dark:bg-complementary"
+        class="inline object-cover w-full h-full rounded-full bg-primary dark:bg-complementary"
         src="@/assets/avatar.png"
         alt="Profile image"
       />

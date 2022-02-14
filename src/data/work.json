@@ -1,80 +1,78 @@
-[
-  {
-    "en": [
-      {
-        "id": 1,
-        "place": "Cifo La Violeta",
-        "grade": "Web page creation and management",
-        "position": "Student",
-        "start_date": "2015",
-        "end_date": "2016",
-        "description": "Design and creation of websites with responsive technology and management and creation of pages on CMS such as Wordpress or Joomla."
-      },
-      {
-        "id": 2,
-        "place": "STUCOM Centre d'Estudis",
-        "grade": "Superior technician in telecommunications and information systems",
-        "position": "Student",
-        "start_date": "2008",
-        "end_date": "2010",
-        "description": "Preparation to configure, manage and maintain computer systems, ensuring the functionality, integrity of resources and system services, in accordance with current regulations."
-      },
-      {
-        "id": 3,
-        "place": "Cifo La Violeta",
-        "grade": "Web page creation and management",
-        "position": "Student",
-        "start_date": "2015",
-        "end_date": "2016",
-        "description": "Design and creation of websites with responsive technology and management and creation of pages on CMS such as Wordpress or Joomla."
-      },
-      {
-        "id": 4,
-        "place": "STUCOM Centre d'Estudis",
-        "grade": "Superior technician in telecommunications and information systems",
-        "position": "Student",
-        "start_date": "2008",
-        "end_date": "2010",
-        "description": "Preparation to configure, manage and maintain computer systems, ensuring the functionality, integrity of resources and system services, in accordance with current regulations."
-      }
-    ],
-    "es": [
-      {
-        "id": 1,
-        "place": "Cifo La Violeta",
-        "grade": "Creación y gestión de páginas Web",
-        "position": "Estudiante",
-        "start_date": "2015",
-        "end_date": "2016",
-        "description": "Diseño y creación de páginas web con tecnología responsive y gestión y creación de páginas sobre CMS como Wordpress o Joomla."
-      },
-      {
-        "id": 2,
-        "place": "STUCOM Centre d'Estudis",
-        "grade": "Técnico superior en sistemas de telecomunicaciones e informatica",
-        "position": "Estudiante",
-        "start_date": "2008",
-        "end_date": "2010",
-        "description": "Preparación para configurar, administrar y mantener los sistemas informáticos, garantizando la funcionalidad, la integridad de los recursos y los servicios del sistema, de acuerdo con la reglamentación vigente."
-      },
-      {
-        "id": 3,
-        "place": "Cifo La Violeta",
-        "grade": "Creación y gestión de páginas Web",
-        "position": "Estudiante",
-        "start_date": "2015",
-        "end_date": "2016",
-        "description": "Diseño y creación de páginas web con tecnología responsive y gestión y creación de páginas sobre CMS como Wordpress o Joomla."
-      },
-      {
-        "id": 4,
-        "place": "STUCOM Centre d'Estudis",
-        "grade": "Técnico superior en sistemas de telecomunicaciones e informatica",
-        "position": "Estudiante",
-        "start_date": "2008",
-        "end_date": "2010",
-        "description": "Preparación para configurar, administrar y mantener los sistemas informáticos, garantizando la funcionalidad, la integridad de los recursos y los servicios del sistema, de acuerdo con la reglamentación vigente."
-      }
-    ]
-  }
-]
+{
+  "en": [
+    {
+      "id": 1,
+      "place": "Cifo La Violeta",
+      "grade": "Web page creation and management",
+      "position": "Student",
+      "start_date": "2015",
+      "end_date": "2016",
+      "description": "Design and creation of websites with responsive technology and management and creation of pages on CMS such as Wordpress or Joomla."
+    },
+    {
+      "id": 2,
+      "place": "STUCOM Centre d'Estudis",
+      "grade": "Superior technician in telecommunications and information systems",
+      "position": "Student",
+      "start_date": "2008",
+      "end_date": "2010",
+      "description": "Preparation to configure, manage and maintain computer systems, ensuring the functionality, integrity of resources and system services, in accordance with current regulations."
+    },
+    {
+      "id": 3,
+      "place": "Cifo La Violeta",
+      "grade": "Web page creation and management",
+      "position": "Student",
+      "start_date": "2015",
+      "end_date": "2016",
+      "description": "Design and creation of websites with responsive technology and management and creation of pages on CMS such as Wordpress or Joomla."
+    },
+    {
+      "id": 4,
+      "place": "STUCOM Centre d'Estudis",
+      "grade": "Superior technician in telecommunications and information systems",
+      "position": "Student",
+      "start_date": "2008",
+      "end_date": "2010",
+      "description": "Preparation to configure, manage and maintain computer systems, ensuring the functionality, integrity of resources and system services, in accordance with current regulations."
+    }
+  ],
+  "es": [
+    {
+      "id": 1,
+      "place": "Cifo La Violeta",
+      "grade": "Creación y gestión de páginas Web",
+      "position": "Estudiante",
+      "start_date": "2015",
+      "end_date": "2016",
+      "description": "Diseño y creación de páginas web con tecnología responsive y gestión y creación de páginas sobre CMS como Wordpress o Joomla."
+    },
+    {
+      "id": 2,
+      "place": "STUCOM Centre d'Estudis",
+      "grade": "Técnico superior en sistemas de telecomunicaciones e informatica",
+      "position": "Estudiante",
+      "start_date": "2008",
+      "end_date": "2010",
+      "description": "Preparación para configurar, administrar y mantener los sistemas informáticos, garantizando la funcionalidad, la integridad de los recursos y los servicios del sistema, de acuerdo con la reglamentación vigente."
+    },
+    {
+      "id": 3,
+      "place": "Cifo La Violeta",
+      "grade": "Creación y gestión de páginas Web",
+      "position": "Estudiante",
+      "start_date": "2015",
+      "end_date": "2016",
+      "description": "Diseño y creación de páginas web con tecnología responsive y gestión y creación de páginas sobre CMS como Wordpress o Joomla."
+    },
+    {
+      "id": 4,
+      "place": "STUCOM Centre d'Estudis",
+      "grade": "Técnico superior en sistemas de telecomunicaciones e informatica",
+      "position": "Estudiante",
+      "start_date": "2008",
+      "end_date": "2010",
+      "description": "Preparación para configurar, administrar y mantener los sistemas informáticos, garantizando la funcionalidad, la integridad de los recursos y los servicios del sistema, de acuerdo con la reglamentación vigente."
+    }
+  ]
+}
