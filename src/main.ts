@@ -3,9 +3,9 @@ import { createI18n } from 'vue-i18n'
 
 import App from './App.vue'
 import './index.css'
-import projectLocales from './locales';
+import projectLocales from './locales'
 
-localStorage.setItem('color-theme', 'light');
+localStorage.setItem('color-theme', 'light')
 
 const i18n = createI18n({
   legacy: false,
@@ -13,8 +13,6 @@ const i18n = createI18n({
   fallbackLocale: 'en',
   globalInjection: true,
   messages: projectLocales,
-});
+})
 
-createApp(App)
-  .use(i18n)
-  .mount('#app')
+createApp(App).use(i18n).mount('#app')

@@ -70,7 +70,7 @@ export default defineComponent({
     }
     &.primary,
     &.secondary {
-      @apply bg-primary border-primary hover:bg-secondary-300 hover:border-secondary-300 dark:bg-complementary dark:border-complementary dark:hover:bg-complementary-800 dark:hover:border-complementary-800
+      @apply bg-primary border-primary hover:bg-secondary-300 hover:border-secondary-300 dark:bg-complementary dark:border-complementary dark:hover:bg-complementary-800 dark:hover:border-complementary-800;
     }
     &.complementary {
       @apply bg-complementary border-complementary;

@@ -16,25 +16,16 @@
     "resolveJsonModule": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "src/*"
-      ],
+      "@/*": ["src/*"]
     },
-    "lib": [
-      "es2020",
-      "dom",
-      "dom.iterable",
-      "scripthost"
-    ]
+    "lib": ["es2020", "dom", "dom.iterable", "scripthost"]
   },
   "include": [
     "src/**/*.ts",
     "src/**/*.tsx",
     "src/**/*.vue",
     "tests/**/*.ts",
-    "tests/**/*.tsx",
+    "tests/**/*.tsx"
   ],
-  "exclude": [
-    "node_modules",
-  ]
+  "exclude": ["node_modules"]
 }

@@ -1,9 +1,9 @@
-import enUS from './en-US.json';
-import esES from './es-ES.json';
+import enUS from './en-US.json'
+import esES from './es-ES.json'
 
 const projectLocales = {
-  'en': enUS,
-  'es': esES,
-};
+  en: enUS,
+  es: esES,
+}
 
-export default projectLocales;
+export default projectLocales
