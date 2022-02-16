@@ -1,5 +1,4 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
+<script>
 import { useI18n } from 'vue-i18n'
 
 import FjHero from '@/components/FjHero/FjHero.vue'
@@ -8,7 +7,7 @@ import FjLegend from '@/components/FjLegend/FjLegend.vue'
 import careerData from '../../data/career.json'
 import workData from '../../data/work.json'
 
-export default defineComponent({
+export default {
   name: 'FjWrapper',
   components: {
     FjHero,
@@ -23,7 +22,7 @@ export default defineComponent({
       workData,
     }
   },
-})
+}
 </script>
 
 <template>
