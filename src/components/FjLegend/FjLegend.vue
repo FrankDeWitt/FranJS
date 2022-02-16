@@ -7,7 +7,7 @@ export default defineComponent({
   props: {
     dataElements: {
       type: Object,
-      default: {},
+      default: () => {},
     },
   },
   setup() {
